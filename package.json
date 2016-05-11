@@ -1,0 +1,29 @@
+{
+  "name": "ncube-ui",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncube/ncube-ui.git"
+  },
+  "license": "CC-BY-SA-4.0",
+  "author": "NCube School",  
+  "homepage": "http://ncubeschool.org/ncube-ui",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^5.0.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csscomb": "^3.1.0",
+    "grunt-eslint": "^18.1.0",
+    "grunt-line-remover": "0.0.2",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.0",
+    "grunt-stamp": "^0.1.0",
+    "load-grunt-tasks": "^3.5.0",
+    "time-grunt": "^1.3.0"
+  }
+}
