@@ -56,3 +56,19 @@
     +make-col-pull($size, $columns)
   @else if $type == offset
     +make-col-offset($size, $columns)
+
+// For Horizontal
+=make-container-hr($gutter: $grid-gutter-width)
+  padding: $gutter
+  display: flex
+  -webkit-box-direction: normal
+  -moz-box-direction: normal
+  -webkit-box-orient: vertical
+  -moz-box-orient: vertical
+  flex-direction: column
+  flex-wrap: wrap
+  -webkit-box-pack: start
+  -moz-box-pack: start
+  justify-content: flex-start
+  align-content: flex-start
+  align-items: flex-start
