@@ -192,8 +192,13 @@ module.exports = function (grunt) {
             }
         },
 
-        // copy: {
-        // },
+        copy: {
+            baseFonts: {
+                expand: true,
+                src: 'fonts/**',
+                dest: 'dist/'
+            }
+        },
 
         watch: {
             src: {
@@ -249,7 +254,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'csscomb:dist']);
 
     // Full distribution task.
-    grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+    grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy', 'dist-js']);
 
     // Default task.
     //   grunt.registerTask('default', ['clean:dist', 'test']);
