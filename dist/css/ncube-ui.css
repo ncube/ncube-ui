@@ -267,7 +267,7 @@
   src: url("../fonts/poppins/Poppins-Light.ttf") format("truetype");
 }@font-face {
   font-family: "Poppins";
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
 
   src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
@@ -285,7 +285,7 @@
   src: url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
 }@font-face {
   font-family: "Poppins";
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 
   src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
