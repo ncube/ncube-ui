@@ -164,7 +164,7 @@
   -webkit-tap-highlight-color: transparent;
 }body {
   font-family: "Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.5;
   color: #373a3c;
   background-color: #fff;
@@ -368,7 +368,7 @@
 }.blockquote {
   padding: .5rem 1rem;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   border-left: .25rem solid #eceeef;
 }.blockquote-footer {
   display: block;
@@ -1188,7 +1188,7 @@
   display: block;
   width: 100%;
   padding: .375rem .75rem;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.5;
   color: #55595c;
   background-color: #fff;
@@ -1225,14 +1225,14 @@
   margin-bottom: 0;
 }@media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].form-control,input[type="time"].form-control,input[type="datetime-local"].form-control,input[type="month"].form-control {
-    line-height: 2.25rem;
+    line-height: 2.1rem;
   }input[type="date"].input-sm,.input-group-sm input[type="date"].form-control,input[type="time"].input-sm,.input-group-sm input[type="time"].form-control,input[type="datetime-local"].input-sm,.input-group-sm input[type="datetime-local"].form-control,input[type="month"].input-sm,.input-group-sm input[type="month"].form-control {
     line-height: 1.8625rem;
   }input[type="date"].input-lg,.input-group-lg input[type="date"].form-control,input[type="time"].input-lg,.input-group-lg input[type="time"].form-control,input[type="datetime-local"].input-lg,.input-group-lg input[type="datetime-local"].form-control,input[type="month"].input-lg,.input-group-lg input[type="month"].form-control {
     line-height: 3.1666666667rem;
   }
 }.form-control-static {
-  min-height: 2.25rem;
+  min-height: 2.1rem;
   padding-top: .375rem;
   padding-bottom: .375rem;
   margin-bottom: 0;
@@ -1288,9 +1288,9 @@
 }.form-control-success,.form-control-warning,.form-control-danger {
   padding-right: 2.25rem;
   background-repeat: no-repeat;
-  background-position: center right .5625rem;
-  -webkit-background-size: 1.4625rem 1.4625rem;
-          background-size: 1.4625rem 1.4625rem;
+  background-position: center right .525rem;
+  -webkit-background-size: 1.365rem 1.365rem;
+          background-size: 1.365rem 1.365rem;
 }.has-success .text-help,.has-success .form-control-label,.has-success .radio,.has-success .checkbox,.has-success .radio-inline,.has-success .checkbox-inline,.has-success.radio label,.has-success.checkbox label,.has-success.radio-inline label,.has-success.checkbox-inline label {
   color: #5cb85c;
 }.has-success .form-control {
@@ -1364,7 +1364,7 @@
 }.btn {
   display: inline-block;
   padding: .375rem 1rem;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: normal;
   line-height: 1.5;
   text-align: center;
@@ -1743,7 +1743,7 @@
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 1rem;
+  font-size: .9rem;
   color: #373a3c;
   text-align: left;
   list-style: none;
@@ -1937,7 +1937,7 @@
   vertical-align: middle;
 }.input-group-addon {
   padding: .375rem .75rem;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: normal;
   line-height: 1;
   color: #55595c;
@@ -2966,7 +2966,7 @@
   padding-bottom: 100%;
 }.close {
   float: right;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -3247,7 +3247,7 @@
 }.popover-title {
   padding: 8px 14px;
   margin: 0;
-  font-size: 1rem;
+  font-size: .9rem;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: -.7rem -.7rem 0 0;
