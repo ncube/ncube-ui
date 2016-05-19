@@ -1716,14 +1716,14 @@
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-}.push-bottom {
+}.flex-push-bottom {
   -webkit-box-flex: 1;
   -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
-}.column-fixed {
+}.flex-column-fixed {
   width: 220px;
-}.column-fluid {
+}.flex-column-fluid {
   overflow: auto;
 
   -webkit-box-flex: 1;
