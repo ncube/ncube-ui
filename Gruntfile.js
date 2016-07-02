@@ -197,6 +197,11 @@ module.exports = function (grunt) {
                 expand: true,
                 src: 'fonts/**',
                 dest: 'dist/'
+            },
+            css: {
+              expand: true,
+              src: 'css/**',
+              dest: 'dist/'
             }
         },
 
