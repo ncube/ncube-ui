@@ -1,10 +1,10 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     'use strict';
 
     // Force use of Unix newlines
     grunt.util.linefeed = '\n';
 
-    RegExp.quote = function (string) {
+    RegExp.quote = function(string) {
         return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
     };
 
@@ -25,19 +25,19 @@ module.exports = function (grunt) {
         // Metadata.
         pkg: grunt.file.readJSON('package.json'),
         banner: '/*!\n' +
-        ' * NCube UI v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-        ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-        ' * Licensed under CC-BY-SA-4.0 (https://github.com/ncube/ncube-ui/blob/master/LICENSE)\n' +
-        ' */\n',
+            ' * NCube UI v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Licensed under CC-BY-SA-4.0 (https://github.com/ncube/ncube-ui/blob/master/LICENSE)\n' +
+            ' */\n',
         jqueryCheck: 'if (typeof jQuery === \'undefined\') {\n' +
-        '  throw new Error(\'NCube UI\\\'s JavaScript requires jQuery\')\n' +
-        '}\n',
+            '  throw new Error(\'NCube UI\\\'s JavaScript requires jQuery\')\n' +
+            '}\n',
         jqueryVersionCheck: '+function ($) {\n' +
-        '  var version = $.fn.jquery.split(\' \')[0].split(\'.\')\n' +
-        '  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] >= 3)) {\n' +
-        '    throw new Error(\'NCube UI\\\'s JavaScript requires at least jQuery v1.9.1 but less than v3.0.0\')\n' +
-        '  }\n' +
-        '}(jQuery);\n\n',
+            '  var version = $.fn.jquery.split(\' \')[0].split(\'.\')\n' +
+            '  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] >= 3)) {\n' +
+            '    throw new Error(\'NCube UI\\\'s JavaScript requires at least jQuery v1.9.1 but less than v3.0.0\')\n' +
+            '  }\n' +
+            '}(jQuery);\n\n',
 
         // Task configuration.
         clean: {
@@ -199,9 +199,9 @@ module.exports = function (grunt) {
                 dest: 'dist/'
             },
             css: {
-              expand: true,
-              src: 'css/**',
-              dest: 'dist/'
+                expand: true,
+                src: 'css/**',
+                dest: 'dist/'
             }
         },
 
@@ -239,7 +239,7 @@ module.exports = function (grunt) {
 
     // These plugins provide necessary tasks.
     require('load-grunt-tasks')(grunt, {
-        scope: 'devDependencies',
+        scope: 'dependencies',
         // Exclude Sass compilers. We choose the one to load later on.
         // pattern: ['grunt-*', '!grunt-sass', '!grunt-contrib-sass']
     });
@@ -266,8 +266,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('commonjs', ['babel:umd', 'npm-js']);
 
-    grunt.registerTask('npm-js', 'Generate npm-js entrypoint module in dist dir.', function () {
-        var srcFiles = Object.keys(grunt.config.get('babel.umd.files')).map(function (filename) {
+    grunt.registerTask('npm-js', 'Generate npm-js entrypoint module in dist dir.', function() {
+        var srcFiles = Object.keys(grunt.config.get('babel.umd.files')).map(function(filename) {
             return './' + path.join('umd', path.basename(filename))
         })
         var destFilepath = 'dist/js/npm.js';

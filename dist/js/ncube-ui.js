@@ -1,6 +1,6 @@
 /*!
  * NCube UI v0.1.0 (http://ncubeschool.org/ncube-ui)
- * Copyright 2015-2016 NCube School
+ * Copyright 2015-2016 NCube School <ncubeschool.org>
  * Licensed under CC-BY-SA-4.0 (https://github.com/ncube/ncube-ui/blob/master/LICENSE)
  */
 
